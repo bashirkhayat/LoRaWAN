@@ -1,0 +1,23 @@
+{
+    "phyPayload": "QLTrIAGAAgACknTSK8KPmQmEF89Vpl+Tj3XxsuE=", 
+    "rxInfo": {
+        "antenna": 0, 
+        "board": 0, 
+        "channel": 1, 
+        "codeRate": "4/5", 
+        "crcStatus": 1, 
+        "dataRate": {
+            "bandwidth": 125, 
+            "modulation": "LORA", 
+            "spreadFactor": 12
+        }, 
+        "frequency": 868100000, 
+        "loRaSNR": 7, 
+        "mac": "00000027eba496b0", 
+        "rfChain": 1, 
+        "rssi": -57, 
+        "size": 23, 
+        "time": "2018-08-22T11:09:10.017243Z", 
+        "timestamp": 1534925350
+    }
+}

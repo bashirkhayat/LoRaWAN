@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+# x=`netstat -tulpn | grep 50051 | tail -n 1 |  awk '{print $7}' | cut -d'/' -f1`
+# if [ $x!="" ]; then 
+# 	kill $x
+# fi
+
+sudo systemctl restart loraserver.service
+sudo systemctl restart lora-app-server.service
+mosquitto -d
+
+
+
+if [ "$1" = "DevStatusReq" ]; then
+	go run ./DevStatusReq/main.go "$2"
+elif [ "$1" = "DutyCycleReq" ]; then
+	go run ./DutyCycleReq/main.go
+elif [ "$1" = "LinkADRReq" ]; then
+	go run ./LinkADRReq/main.go "$2"
+fi

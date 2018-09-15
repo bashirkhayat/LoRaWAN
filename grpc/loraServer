@@ -1,0 +1,3 @@
+sudo systemctl restart loraserver.service
+sudo systemctl restart lora-app-server.service
+mosquitto -d
